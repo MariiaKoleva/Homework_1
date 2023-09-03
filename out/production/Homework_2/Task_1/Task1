@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class NumberCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read three numbers from the user
+        System.out.print("Enter the first number (A): ");
+        double A = scanner.nextDouble();
+
+        System.out.print("Enter the second number (B): ");
+        double B = scanner.nextDouble();
+
+        System.out.print("Enter the third number (C): ");
+        double C = scanner.nextDouble();
+
+        // Check if C is between A and B
+        if (A < C && C < B) {
+            System.out.println("Number " + C + " is between " + A + " and " + B + ".");
+        } else {
+            System.out.println("Number " + C + " is not between " + A + " and " + B + ".");
+        }
+
+        // Close the scanner
+        scanner.close();
+    }
+}
