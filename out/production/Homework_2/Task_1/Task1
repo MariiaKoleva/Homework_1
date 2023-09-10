@@ -1,18 +1,18 @@
+package Task_1;
 import java.util.Scanner;
 
-public class NumberCheck {
+public class Task1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner UserInput = new Scanner(System.in);
 
-        // Read three numbers from the user
         System.out.print("Enter the first number (A): ");
-        double A = scanner.nextDouble();
+        double A = UserInput.nextDouble();
 
         System.out.print("Enter the second number (B): ");
-        double B = scanner.nextDouble();
+        double B = UserInput.nextDouble();
 
         System.out.print("Enter the third number (C): ");
-        double C = scanner.nextDouble();
+        double C = UserInput.nextDouble();
 
         // Check if C is between A and B
         if (A < C && C < B) {
@@ -22,6 +22,10 @@ public class NumberCheck {
         }
 
         // Close the scanner
-        scanner.close();
+        UserInput.close();
     }
 }
+
+
+
+
